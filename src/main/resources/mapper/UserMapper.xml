@@ -8,7 +8,7 @@
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="username" column="username" jdbcType="VARCHAR"/>
             <result property="userAccount" column="userAccount" jdbcType="VARCHAR"/>
-            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="userPassword" column="userPassword" jdbcType="VARCHAR"/>
             <result property="avatarUrl" column="avatarUrl" jdbcType="VARCHAR"/>
             <result property="gender" column="gender" jdbcType="TINYINT"/>
             <result property="address" column="address" jdbcType="VARCHAR"/>
@@ -18,13 +18,14 @@
             <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
             <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
             <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+            <result property="userRole" column="userRole" jdbcType="INTEGER"/>
     </resultMap>
 
     <sql id="Base_Column_List">
         id,username,userAccount,
-        password,avatarUrl,gender,
+        userPassword,avatarUrl,gender,
         address,phone,email,
         isValid,update_time,create_time,
-        isDelete
+        isDelete,userRole
     </sql>
 </mapper>

@@ -19,6 +19,7 @@
             <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
             <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
             <result property="userRole" column="userRole" jdbcType="INTEGER"/>
+            <result property="planetCode" column="planetCode" jdbcType="VARCHAR"/>
     </resultMap>
 
     <sql id="Base_Column_List">
@@ -26,6 +27,6 @@
         userPassword,avatarUrl,gender,
         address,phone,email,
         isValid,update_time,create_time,
-        isDelete,userRole
+        isDelete,userRole,planetCode
     </sql>
 </mapper>
